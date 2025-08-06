@@ -1,0 +1,31 @@
+[{
+        "nombreBanco": "Banco Azteca",
+        "logoBanco": "bancoazteca.png",
+        "tipo": "Transferencia",
+        "info": [{
+            "nombrePersona": "Luis Angel Alonzo Calderon",
+            "clave": "127180016850955134",
+            "numero": ""
+        }]
+    },
+    {
+        "nombreBanco": "Mercado Pago",
+        "logoBanco": "mercado.png",
+        "tipo": "Transferencia",
+        "info": [{
+            "nombrePersona": "Luis Angel Alonzo Calderon",
+            "clave": "",
+            "numero": "646017206831517311"
+        }]
+    },
+    {
+        "nombreBanco": "GBM+",
+        "logoBanco": "gbm.png",
+        "tipo": "Tsdh",
+        "info": [{
+            "nombrePersona": "Luis Angel Alonzo Calderon",
+            "clave": "",
+            "numero": "601180400008349954"
+        }]
+    }
+]

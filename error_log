@@ -1,0 +1,50 @@
+[10-Sep-2024 21:11:45 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/wichyalo/public_html/app/conn.php:8
+Stack trace:
+#0 /home3/wichyalo/public_html/app/conn.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'sorteo')
+#1 /home3/wichyalo/public_html/logica/logica__index.php(2): include('/home3/wichyalo...')
+#2 /home3/wichyalo/public_html/index.php(10): include('/home3/wichyalo...')
+#3 {main}
+  thrown in /home3/wichyalo/public_html/app/conn.php on line 8
+[11-Sep-2024 08:37:46 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'wichyalo_cactus'@'localhost' (using password: YES) in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php:8
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php(8): mysqli->__construct('localhost', 'wichyalo_cactus', Object(SensitiveParameterValue), 'wichyalo_cactus')
+#1 /home3/wichyalo/cactuswings.wichyalonzo.com/logica/logica__index.php(2): include('/home3/wichyalo...')
+#2 /home3/wichyalo/cactuswings.wichyalonzo.com/index.php(10): include('/home3/wichyalo...')
+#3 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php on line 8
+[11-Sep-2024 08:38:04 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'wichyalo_cactus'@'localhost' (using password: YES) in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php:8
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php(8): mysqli->__construct('localhost', 'wichyalo_cactus', Object(SensitiveParameterValue), 'wichyalo_cactus')
+#1 /home3/wichyalo/cactuswings.wichyalonzo.com/logica/logica__index.php(2): include('/home3/wichyalo...')
+#2 /home3/wichyalo/cactuswings.wichyalonzo.com/index.php(10): include('/home3/wichyalo...')
+#3 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php on line 8
+[11-Sep-2024 08:38:08 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'wichyalo_cactus'@'localhost' (using password: YES) in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php:8
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php(8): mysqli->__construct('localhost', 'wichyalo_cactus', Object(SensitiveParameterValue), 'wichyalo_cactus')
+#1 /home3/wichyalo/cactuswings.wichyalonzo.com/logica/logica__index.php(2): include('/home3/wichyalo...')
+#2 /home3/wichyalo/cactuswings.wichyalonzo.com/index.php(10): include('/home3/wichyalo...')
+#3 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php on line 8
+[11-Sep-2024 08:38:22 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'wichyalo_cactus'@'localhost' (using password: YES) in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php:8
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php(8): mysqli->__construct('localhost', 'wichyalo_cactus', Object(SensitiveParameterValue), 'wichyalo_cactus')
+#1 /home3/wichyalo/cactuswings.wichyalonzo.com/app/varGlobal.php(2): include('/home3/wichyalo...')
+#2 /home3/wichyalo/cactuswings.wichyalonzo.com/404.php(4): include('/home3/wichyalo...')
+#3 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/app/conn.php on line 8
+[23-Nov-2024 01:00:31 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'wichyalo_cactus.info_boletos__dos' doesn't exist in /home3/wichyalo/cactuswings.wichyalonzo.com/b21-list.php:76
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/b21-list.php(76): mysqli_query(Object(mysqli), 'SELECT COUNT(st...')
+#1 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/b21-list.php on line 76
+[23-Nov-2024 01:00:32 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'wichyalo_cactus.info_boletos__dos' doesn't exist in /home3/wichyalo/cactuswings.wichyalonzo.com/b21-list.php:76
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/b21-list.php(76): mysqli_query(Object(mysqli), 'SELECT COUNT(st...')
+#1 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/b21-list.php on line 76
+[23-Nov-2024 09:37:57 America/Mexico_City] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect table name '' in /home3/wichyalo/cactuswings.wichyalonzo.com/b22-list.php:76
+Stack trace:
+#0 /home3/wichyalo/cactuswings.wichyalonzo.com/b22-list.php(76): mysqli_query(Object(mysqli), 'SELECT COUNT(st...')
+#1 {main}
+  thrown in /home3/wichyalo/cactuswings.wichyalonzo.com/b22-list.php on line 76

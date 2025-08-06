@@ -1,0 +1,110 @@
+[
+    {
+        "nombreBanco": "Uala (ABC Capital)",
+        "logoBanco": "Uala-Logo.png",
+        "tipo": "Transferencias",
+        "info": [
+            {
+                "nombrePersona": "Luis Angel Alonzo Calderon",
+                "clave": "138580000024223048",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "..\/assets\/img\/system\/no_fun.png",
+        "tipo": "Transferencias",
+        "info": [
+            {
+                "nombrePersona": "455",
+                "clave": "111",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "..\/assets\/img\/system\/no_fun.png",
+        "tipo": "Transferencias",
+        "info": [
+            {
+                "nombrePersona": "455",
+                "clave": "111",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "..\/assets\/img\/system\/no_fun.png",
+        "tipo": "Transferencias",
+        "info": [
+            {
+                "nombrePersona": "455",
+                "clave": "111",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "",
+        "tipo": "",
+        "info": [
+            {
+                "nombrePersona": "",
+                "clave": "",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "",
+        "tipo": "",
+        "info": [
+            {
+                "nombrePersona": "",
+                "clave": "",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "",
+        "tipo": "",
+        "info": [
+            {
+                "nombrePersona": "",
+                "clave": "",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "",
+        "tipo": "",
+        "info": [
+            {
+                "nombrePersona": "",
+                "clave": "",
+                "numero": ""
+            }
+        ]
+    },
+    {
+        "nombreBanco": "",
+        "logoBanco": "",
+        "tipo": "",
+        "info": [
+            {
+                "nombrePersona": "",
+                "clave": "",
+                "numero": ""
+            }
+        ]
+    }
+]
