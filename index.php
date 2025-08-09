@@ -1,80 +1,53 @@
-<?php
-include $urlPartner . '/plugins/cache.php';
-include('app/vConn.php');
-if (empty($local)) {
-    header('Location: script/index.php');
-    exit;
-}
+<!-- Nuevo -->
+<?php include 'app/conn.php'; ?>
+<?php 
+    if($production != true) {
+        error_reporting(0);
 
-
-include 'logica/logica__index.php';
-include 'sys.php';
-$data = file_get_contents("app/post.json");
-$post = json_decode($data);
-
+    }
 ?>
+<?php include 'app/varGlobal.php'; ?>
+<?php include 'fetch/root.php'; ?>
+<?php include 'fecth/post.php'; ?>
+<?php include 'partnet/cachec.php'; ?>
+<?php if (empty($local)) { header('Location: script/index.php'); exit; } ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <title><?php echo 'Inicio - ' . $importanteNombreCorto; ?></title>
+    <title><?php echo 'Inicio - ' . $nombreRifa; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta property="og:title" content="<?php echo $importanteNombreCorto; ?>">
-    <meta property="og:image" content="assets/img/portada.png">
+    <meta property="og:title" content="<?php echo $nombreCorto; ?>">
+    <meta property="og:image" content="<?php echo $urlPartner ?>assets/img/root/<?php echo $portadaprincipal; ?>?v=<?php echo time(); ?>">
     <meta property="og:url" content="">
-    <meta property="og:site_name" content="<?php echo $importanteNombreCorto; ?>">
+    <meta property="og:site_name" content="<?php echo $nombreCorto; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Inicio - <?php echo $importanteNombreCorto; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
-    <link rel="icon" type="image/png" sizes="179x180" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
-    <link rel="icon" type="image/png" sizes="191x192" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
-    <link rel="icon" type="image/png" sizes="510x512" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
+    <meta property="og:description" content="Inicio - <?php echo $nombreCorto; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $urlPartner ?>assets/img/root/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $urlPartner ?>assets/img/root/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
+    <link rel="icon" type="image/png" sizes="179x180" href="<?php echo $urlPartner ?>assets/img/root/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
+    <link rel="icon" type="image/png" sizes="191x192" href="<?php echo $urlPartner ?>assets/img/root/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
+    <link rel="icon" type="image/png" sizes="510x512" href="<?php echo $urlPartner ?>assets/img/root/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/css/root.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/css/theme.css?v=<?php echo time(); ?>">
-    <?php
-    include 'include/meta_head.php';
-    ?>
+    
 
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-shrink py-3 navbar-light nav_style themeDarkNav st__nav" id="mainNav">
-        <div class="navbr_menu">
-            <div>
-                <div class="container d-flex align-items-center justify-content-between text-center fw-bold">
-                    <a href="<?php echo $linkPPago; ?>" class="navbar-toggler text-white fs-6" style="border: none;">Métodos de Pago</a>
-                    <a class="navbar-brand d-flex align-items-center" href="">
-                        <img src="assets/img/<?php echo $logo; ?>" class="img-menu__nav mx-2">
-                    </a>
-                    <a href="<?php echo $linkPSorteo; ?>" class="navbar-toggler text-white fs-6" style="border: none;">Comprar Boletos</a>
-                </div>
-
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item fw-bold fs-5"><a class="nav-link active text-white fs_action" href="/">Inicio</a></li>
-                        <li class="nav-item fw-bold fs-5"><a class="nav-link active text-white fs_action" href="<?php echo $linkPSorteo; ?>">Comprar Boletos</a></li>
-                        <li class="nav-item fw-bold fs-5"><a class="nav-link active text-white fs_action" href="<?php echo $linkPPago; ?>">Métodos de Pago</a></li>
-                        <li class="nav-item fw-bold fs-5"><a class="nav-link active text-white fs_action" href="<?php echo $linkPCheck; ?>">Verificador</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </nav>
+    <?php include 'partner/menu.php'; ?>
     <div class="carousel slide container-index" data-bs-ride="carousel" id="carousel-1" style="height: 500px!important;">
         <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100 parallax" style="background-image: url('assets/img/<?php echo $Creativo1; ?>')">
+            <div class="carousel-item active h-100 parallax" style="background-image: url('assets/img/root/<?php echo $portadaprincipal; ?>')">
                 <div class="container d-flex flex-column justify-content-center h-100">
                     <div class="row">
                         <div class="text-center container">
                             <div class="container">
-                                <a href="<?php echo $linkPSorteo; ?>" class="btn btn-danger rounded-0 fs-5" type="button" style="border: solid;">
+                                <a href="<?php echo $link_s1; ?>" class="btn btn-danger rounded-0 fs-5" type="button" style="border: solid;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                                     </svg>
@@ -100,37 +73,48 @@ $post = json_decode($data);
     <div class="container mt-4">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <?php
-            $faq1 = $faqJ1;
-            $faq2 = $faqJ2;
-            $faq3 = $faqJ3;
-            $faq4 = $faqJ4;
-            $faq5 = $faqJ5;
+                if (!is_array($data) || !isset($data['faq']) || !is_array($data['faq'])) {
+                    die('Estructura de FAQ no válida.');
+                }
 
-            $prefixes = [
-                $respuestaJ1,
-                $respuestaJ2,
-                $respuestaJ3,
-                $respuestaJ4,
-                $respuestaJ5
-            ];
+                $faqs = $data['faq'];
 
-            $printedFirst = false;
-            for ($i = 0; $i < count($prefixes); $i++) {
-                $variable = "faq" . ($i + 1);
-                $prefix = $prefixes[$i];
-                if (!empty($$variable)) {
-                    echo '
-                        <div class="">
-                            <h2 class="fs-2 container text-primary fw-bolder text-center preguntasFrecuentes">
+                // Para omitir duplicados
+                $vistos = [];
 
-                                ' . $$variable . '
-                            </h2>
-                            <div class="fw-bolder respuestasFrecuentes">
-                                ' . $prefix . '
-                            </div>
+                // Función para normalizar y revisar vacío
+                function contenido_vacio($txt){
+                    $plano = trim(strip_tags((string)$txt));
+                    return $plano === '';
+
+                }
+
+                foreach ($faqs as $key => $item) {
+                    $preg = $item['faq']       ?? '';
+                    $resp = $item['respuesta'] ?? '';
+
+                    // Omitir vacíos
+                    if (contenido_vacio($preg) || contenido_vacio($resp)) {
+                        continue;
+                    }
+
+                    // Evitar duplicados (por pregunta)
+                    $firma = mb_strtolower(trim(strip_tags($preg)));
+                    if (in_array($firma, $vistos, true)) {
+                        continue;
+                    }
+                    $vistos[] = $firma;
+
+                    
+                    echo '<div class="mb-4">
+                            <h2 class="fs-2 container text-primary fw-bolder text-center preguntasFrecuentes">'
+                                . htmlspecialchars($preg, ENT_QUOTES, 'UTF-8') .
+                            '</h2>
+                            <div class="fw-bolder respuestasFrecuentes">'
+                                . $resp .
+                            '</div>
                         </div>';
                 }
-            }
             ?>
         </div>
     </div>
@@ -179,26 +163,18 @@ $post = json_decode($data);
             <?php ?>
         </div>
     </div>
+
+    <!-- Bloque visualizar Facebook -->
     <div class="text-center justify-content-center mb-4">
         <div class="fb-page" data-href="<?php echo $facebook; ?>" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
             <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
         </div>
 
     </div>
-    <?php
-    include 'include/footer.php';
-    include 'include/meta_script.php';
 
-    ?>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0" nonce="OpGDPo6d"></script>
-    <?php include 'include/menujs.php'; ?>
-    <script src="https://code.jquery.com/jquery-3.6.4.js?v=<?php echo time(); ?>" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js?v=<?php echo time(); ?>"></script>
-    <script src="assets/js/bold-and-bright.js?v=<?php echo time(); ?>"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-    <script src="assets/js/Simple-Slider.js?v=<?php echo time(); ?>"></script>
-    <script src="assets/js/theme.js?v=<?php echo time(); ?>"></script>
+    <?php include 'partner/footer.php' ?>
+    <?php include 'partner/script.php' ?>
+
 </body>
 
 </html>

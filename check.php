@@ -10,14 +10,14 @@ date_default_timezone_set("America/Mexico_City");
 <html lang="es">
 
 <head>
-    <title>Verificador de <?php echo $infoSorteoNombre . ' - ' . $importanteNombreCorto; ?></title>
+    <title>Verificador de <?php echo $infoSorteoNombre . ' - ' . $nombreCorto; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta property="og:title" content="Verificador de <?php echo $infoSorteoNombre . ' - ' . $importanteNombreCorto; ?>">
+    <meta property="og:title" content="Verificador de <?php echo $infoSorteoNombre . ' - ' . $nombreCorto; ?>">
     <meta property="og:image" content="assets/img/portada.png">
-    <meta property="og:site_name" content="<?php echo $importanteNombreCorto; ?>">
+    <meta property="og:site_name" content="<?php echo $nombreCorto; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Verificador de <?php echo $importanteNombreCorto; ?>" />
+    <meta property="og:description" content="Verificador de <?php echo $nombreCorto; ?>" />
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" sizes="179x180" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">

@@ -1,7 +1,31 @@
 {
+  "s1": {
     "referidos": {
-        "users": {
-            "Wichy": 107
-        }
+      "users": {
+        "Wichy": 107
+        
+      }
     }
+  },
+  "s2": {
+    "referidos": {
+      "users": {
+        
+      }
+    }
+  },
+  "s3": {
+    "referidos": {
+      "users": {
+        
+      }
+    }
+  },
+  "s4": {
+    "referidos": {
+      "users": {
+        
+      }
+    }
+  }
 }

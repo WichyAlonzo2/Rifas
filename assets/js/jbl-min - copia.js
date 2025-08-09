@@ -248,7 +248,7 @@ $(document).on('click', '.boleto', function() {
     toast.show();
     setTimeout(function() {
         toast.hide();
-    }, 2500);
+    }, 2500000000);
 });
 
 $('#click__trCart').click(function() {

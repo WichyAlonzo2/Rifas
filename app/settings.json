@@ -1,1 +1,6 @@
-{"numberprocess":true,"progressbar_colors":false,"wins":"-","textboletos":false}
+{
+  "numberprocess": true,
+  "progressbar_colors": true,
+  "wins": "-",
+  "textboletos": true
+}

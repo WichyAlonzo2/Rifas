@@ -16,14 +16,14 @@ if ($mantenimiento === true) {
   <title>Errr</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <meta property="og:title" content="404 Page - <?php echo $importanteNombreCorto; ?>">
+  <meta property="og:title" content="404 Page - <?php echo $nombreCorto; ?>">
   <meta property="og:image" content="<?php echo $urlPartner ?>/assets/img/error.png">
   <meta property="og:url" content="<?php echo $urlPartner ?>">
-  <meta property="og:site_name" content="404 Page - <?php echo $importanteNombreCorto; ?>">
+  <meta property="og:site_name" content="404 Page - <?php echo $nombreCorto; ?>">
   <meta property="og:type" content="website">
   <meta property="og:description" content="Esta pagina no existe :(" />
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="404 Page - <?php echo $importanteNombreCorto; ?>">
+  <meta name="twitter:title" content="404 Page - <?php echo $nombreCorto; ?>">
   <meta name="twitter:image" content="<?php echo $urlPartner ?>/assets/img/error.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">

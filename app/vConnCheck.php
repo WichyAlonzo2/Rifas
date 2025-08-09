@@ -4,9 +4,9 @@
 
 
         private $host = "localhost";
-        private $usuario = "wichyalo_cactus";
-        private $clave = "Gatito1233";
-        private $db = "wichyalo_cactus";
+        private $usuario = "root";
+        private $clave = "";
+        private $db = "sorteo";
         public $conexion;
 
         public function __construct(){

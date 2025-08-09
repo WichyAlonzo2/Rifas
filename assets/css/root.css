@@ -5266,10 +5266,6 @@ input[type=number] {
     height: 63.8px
 }
 
-.spremio__kpl {
-    background: 0 0
-}
-
 .paginador__boletos {
     margin: 0 auto!important
 }
@@ -5277,7 +5273,7 @@ input[type=number] {
 .blts,
 .stl__bol {
     margin-bottom: 3px!important;
-    color: #fff
+    color: #fff!important;
 }
 
 .blts,

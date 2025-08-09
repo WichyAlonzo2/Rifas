@@ -1,12 +1,12 @@
 <?php
-
 include '../app/conn.php';
+$numBoletos = 200;
 $action = (isset($_REQUEST['action']) && $_REQUEST['action'] != NULL) ? $_REQUEST['action'] : '';
 $compiler = (isset($_REQUEST['compiler']) && $_REQUEST['compiler'] != NULL) ? $_REQUEST['compiler'] : '';
 if ($action == 'ajax') {
     include 'funcion__PagiButtons__Boletos.php';
     $page = (isset($_REQUEST['page']) && !empty($_REQUEST['page'])) ? $_REQUEST['page'] : 1;
-    $per_page = 2000; //la cantidad de registros que desea mostrar
+    $per_page = $numBoletos; //la cantidad de registros que desea mostrar
     $adjacents = 4; //brecha entre páginas después de varios adyacentes
     
     $offset = ($page - 1) * $per_page; //Cuenta el número total de filas de la tabla
@@ -16,12 +16,14 @@ if ($action == 'ajax') {
         $numrows = $row['numrows'];
     }
     
-    // Verificar si el número de datos es menor o igual a 2000
-    if ($numrows <= 2000) {
+    // Verificar si el número de datos es menor o igual a $numBoletos
+    if ($numrows <= $numBoletos) {
         $per_page = $numrows; // Establecer la cantidad de registros para mostrar como el número de datos
         $total_pages = 1; // Establecer el número total de páginas como 1
+
     } else {
         $total_pages = ceil($numrows / $per_page); // Calcular el número total de páginas
+        
     }
     
     $reload = 'index.php'; //consulta principal para recuperar los datos
@@ -32,7 +34,7 @@ if ($action == 'ajax') {
     
     <div class="table-pagination pagi__native">
         <?php
-        if ($numrows > 2000) {
+        if ($numrows > $numBoletos) {
             echo paginate($reload, $page, $total_pages, $adjacents);
         }
         ?>
@@ -59,7 +61,7 @@ if ($action == 'ajax') {
     
     <div class="table-pagination pagi__native">
         <?php
-        if ($numrows > 2000) {
+        if ($numrows > $numBoletos) {
             echo paginate($reload, $page, $total_pages, $adjacents);
         }
         ?>

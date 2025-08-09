@@ -155,7 +155,7 @@ if (isset($_POST['social'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>Ajustes - <?php echo $importanteNombreCorto ?></title>
+    <title>Ajustes - <?php echo $nombreCorto ?></title>
 
 
     <meta name="description" content="Start your development with a Dashboard for Bootstrap 5">
@@ -534,7 +534,7 @@ if (isset($_POST['social'])) {
                                                 <div class="card-body">
                                                     <div class="mb-3">
                                                         <label class="form-label" for="basic-default-name">Nombre corto (Ej. Rfs Alonzo)</label>
-                                                        <input name="nombreSorteoCorto" type="text" class="form-control" id="basic-default-name" placeholder="Escribe..." required="" value="<?php echo $importanteNombreCorto ?>">
+                                                        <input name="nombreSorteoCorto" type="text" class="form-control" id="basic-default-name" placeholder="Escribe..." required="" value="<?php echo $nombreCorto ?>">
                                                     </div>
                                                     <div class="mb-3">
                                                         <label class="form-label" for="basic-default-name">Nombre completo (Ej. Rifas Alonzo)</label>

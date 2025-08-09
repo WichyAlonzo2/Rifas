@@ -23,14 +23,14 @@ if (isset($_GET['b'])) {
 <html lang="es">
 
 <head>
-    <title><?php echo $infoSorteoNombre . ' - ' .  $importanteNombreCorto; ?></title>
+    <title><?php echo $infoSorteoNombre . ' - ' .  $nombreCorto; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta property="og:title" content="Formas de Pago - <?php echo $importanteNombreCorto; ?>">
+    <meta property="og:title" content="Formas de Pago - <?php echo $nombreCorto; ?>">
     <meta property="og:image" content="/assets/img/portada.png">
-    <meta property="og:site_name" content="<?php echo $importanteNombreCorto; ?>">
+    <meta property="og:site_name" content="<?php echo $nombreCorto; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Formas de Pago - <?php echo $importanteNombreCorto; ?>" />
+    <meta property="og:description" content="Formas de Pago - <?php echo $nombreCorto; ?>" />
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" sizes="179x180" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">

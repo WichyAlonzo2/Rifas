@@ -5,7 +5,7 @@ $mantenimiento = false;
 
 
 // Importante
-$importanteNombreCorto = $root->nombreSorteoCorto;
+$nombreCorto = $root->nombreSorteoCorto;
 $importanteNombreSorteo = $root->nombreSorteos;
 $importanteUbicacion = $root->ubicacion;
 
@@ -76,7 +76,7 @@ $infoSorteoIndex3 = $root->sorteoActual_tree->detallesIndex;
 $intPrecio3 = $root->sorteoActual_tree->precio;
 $infoSorteoPrecio3 = intval($intPrecio3);
 
-$linkRifas = 'https://api.whatsapp.com/send?phone=5214451540656&text=Hola%20%F0%9F%94%A5%20Me%20interesa%20tener%20mi%20p%C3%A1gina%20%F0%9F%A6%81%0AVengo%20de%20*' . $importanteNombreCorto . '*%0A%0AEn%20un%20momento%20te%20atendemos%20%F0%9F%A6%81';
+$linkRifas = 'https://api.whatsapp.com/send?phone=5214451540656&text=Hola%20%F0%9F%94%A5%20Me%20interesa%20tener%20mi%20p%C3%A1gina%20%F0%9F%A6%81%0AVengo%20de%20*' . $nombreCorto . '*%0A%0AEn%20un%20momento%20te%20atendemos%20%F0%9F%A6%81';
 
 // JS
 $action_Register = '<script src="https://res.cloudinary.com/djqmdm8zd/raw/upload/v1692119485/v3.45TEST/js/action__register_qnm9iw.js"></script>';

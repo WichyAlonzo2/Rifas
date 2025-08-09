@@ -1,0 +1,97 @@
+{
+  "principal": {
+    "nombreRifa": "Sorteos CactusWings",
+    "nombrecorto": "Str CactusWings",
+    "ubicacion": "Uriangato Gto.",
+    "descripcionMetaData": "Gana mucho con nuestas rifas economicas",
+    "favicon": "logo.jpg",
+    "Logo": "logo.jpg",
+    "portadaprincipal": "portada.jpg"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/CactusWingsMXOficial",
+    "instagram": "",
+    "whatsapp": "524451540656"
+  },
+  "faq": {
+    "faq1": {
+      "faq": "\u00bfC\u00d3MO SE ELIGE A LOS GANADORES?",
+      "respuesta": "<p><strong>Cada uno de los <span style=\"color: rgb(31, 73, 125);\">EVENTOS</span> que hacemos es con base de LN</strong></p><p><strong>El ganador de nuestros EVENTOS se escoge con base al premio mayor, con referencia las utlimas cifras del Premio MAYOR \ud83d\udd25</strong></p>"
+    },
+    "faq2": {
+      "faq": "\u00bfQU\u00c9 SUCEDE CUANDO EL N\u00daMERO GANADOR ES UN BOLETO NO VENDIDO?",
+      "respuesta": "<p><span style=\"font-weight: 700;\">Nosotros ponemos los n\u00fameros y tu la suerte \ud83d\ude0e<br><br>Si cae numero no vendido o no pagado, volveremos hacer el sorteo hasta que salga un Ganador y tranquilo que sigues participando con los mismos numeros</span></p>"
+    },
+    "faq3": {
+      "faq": "\u00bfD\u00d3NDE SE PUBLICA A LOS GANADORES?",
+      "respuesta": "<p><span style=\"font-weight: 700;\">Toda nuestra evidencia estar\u00e1 en nuestra pagina de Facebook \ud83c\udf89</span><br></p>"
+    }
+  },
+  "sorteos": {
+    "str1": {
+      "titulo": "RIFA A BENEFICIO Jovita Herrera Paniagua",
+      "fecha": "<p style=\"text-align: center; \">HASTA LLENAR TODOS LOS BOLETOS \ud83d\udd25</p>",
+      "detallesBoletoSorteo": "<p style=\"text-align: center; \">1 \ud83c\udf9f\ufe0f&nbsp; \u00d7 50 (10 Oportunidades)<br>2 \ud83c\udf9f\ufe0f&nbsp; \u00d7 100 (20 Oportunidades)<br>3 \ud83c\udf9f\ufe0f&nbsp; \u00d7 150 (30 Oportunidades)<br>4 \ud83c\udf9f\ufe0f&nbsp; 200 \u00d7&nbsp; (40 Oportunidades)<br></p><h1 style=\"text-align: center; \"><strong style=\"\"><span style=\"background-color: rgb(255, 26, 26); color: rgb(255, 255, 255);\">&nbsp;TU BOLETO HACE LA DIFERENCIA&nbsp;</span></strong></h1><p style=\"text-align: center;\"><br></p><p style=\"text-align: center;\"><strong><span style=\"color: var(--bs-card-color); font-family: var(--bs-body-font-family); font-size: var(--bs-body-font-size); text-align: var(--bs-body-text-align);\"><strong>Entre mas Boletos compres mas oportunidades</strong><br></span>ganar, puedes ir pagando tus boletos poco<br>a poco o pagarlo todo completo \ud83c\udf89</strong></p>",
+      "premioBonos": "<p style=\"text-align: center; \"><strong>Esta Rifa es en Beneficio de la Sra.&nbsp;</strong><span style=\"text-align: var(--bs-body-text-align);\"><strong>Jovita Herrera Paniagua<br>Por favor apoya el Sorteo \u2764\ufe0f<br><br>1er Lugar \ud83c\udfc6&nbsp;</strong></span><span style=\"text-align: var(--bs-body-text-align);\"><strong>$1000 pesos&nbsp; en efectivo<br>2ndo Lugar \ud83c\udfc6 20 Alitas Salsa a Escoger (Ensalada y Papas)<br>3er Lugar \ud83c\udfc6 Pedicura SPA \ud83d\udc85</strong></span></p><p style=\"text-align: center; \"><span style=\"text-align: var(--bs-body-text-align);\"><strong><br>Tu participacion ayudara con los estudios de la Sr.&nbsp;</strong></span><span style=\"text-align: var(--bs-body-text-align);\"><strong>Jovita Herrera Paniagua</strong></span></p>",
+      "detallesIndex": "detallesIndexSorteoActual",
+      "precio": 50,
+      "db": "str",
+      "img": {
+        "1": "1.jpg",
+        "2": "2.jpg",
+        "3": ""
+      }
+    },
+    "str2": {
+      "titulo": "",
+      "fecha": "",
+      "detallesBoletoSorteo": "",
+      "premioBonos": "",
+      "detallesIndex": "",
+      "precio": 0,
+      "db": "",
+      "img": {
+        "1": "WhatsApp Image 2024-11-21 at 11.48.31 AM.jpeg",
+        "2": "",
+        "3": ""
+      }
+    },
+    "str3": {
+      "titulo": "",
+      "fecha": "",
+      "detallesBoletoSorteo": "",
+      "premioBonos": "",
+      "detallesIndex": "",
+      "precio": 0,
+      "db": "",
+      "img": {
+        "1": "WhatsApp Image 2024-11-21 at 11.48.31 AM.jpeg",
+        "2": "",
+        "3": ""
+      }
+    },
+    "str4": {
+      "titulo": "",
+      "fecha": "",
+      "detallesBoletoSorteo": "",
+      "premioBonos": "",
+      "detallesIndex": "",
+      "precio": 0,
+      "db": "",
+        "img": {
+          "1": "WhatsApp Image 2024-11-21 at 11.48.31 AM.jpeg",
+          "2": "",
+          "3": ""
+        }
+    }
+  },
+  "linkPages": {
+    "s1": "b20-list",
+    "s2": "b21-list",
+    "s3": "b8-list",
+    "s4": "b8-list",
+    "pago": "pay",
+    "check": "check",
+    "boletoDigital": "ticket"
+  }
+}

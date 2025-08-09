@@ -1,35 +1,32 @@
 ﻿<?php
 include 'logica/logica__index.php';
 include 'sys.php';
-$data = file_get_contents("app/post.json");
-$post = json_decode($data);
 
-session_start();
-$usuarioingresado = $_SESSION['user'];
-$pass = $_SESSION['pass'];
-$rol = $_SESSION['rol'];
-
-if (isset($_SESSION['user'])) {
-} else {
-    header('location: /games');
-}
 ?>
 
 <!DOCTYPE html>
 <html lang="es" xml:lang="es">
 
 <head>
+    <title><?php echo 'Juego Ruleta - ' . $nombreCorto; ?></title>
+    
+    <!-- Metadatos  -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo 'Juego Ruleta - ' . $importanteNombreCorto; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta property="og:title" content="<?php echo $importanteNombreCorto; ?>">
+    <meta property="og:title" content="<?php echo $nombreCorto; ?>">
     <meta property="og:image" content="assets/img/portada.png">
     <meta property="og:url" content="">
-    <meta property="og:site_name" content="<?php echo $importanteNombreCorto; ?>">
+    <meta property="og:site_name" content="<?php echo $nombreCorto; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Inicio - <?php echo $importanteNombreCorto; ?>">
+    <meta property="og:description" content="Inicio - <?php echo $nombreCorto; ?>">
+    <meta name="description" content="Rulta - WichyAlonzo">
+    <meta name="keywords" content="sorteos, concursos, obtener comentario de Instagram, comentario aleatorio Instagram, sorteo para Facebook, sorteos gratis, aplicación para sorteos en Instagram, sorteos en Instagram gratis, sorteo en facebook gratis, ganador al azar, sorteo al azar">
+    <meta name="google-site-verification" content="anRG_D8WAq_EemBNsdLEx2FT-RSmW7IJUzOt8QNWYM4">
+    <meta name="msvalidate.01" content="D2347BCC2A4799B81EEDFC25EB9A2AE1">
+    
+    <!-- links src -->
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="icon" type="image/png" sizes="179x180" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
@@ -37,21 +34,20 @@ if (isset($_SESSION['user'])) {
     <link rel="icon" type="image/png" sizes="510x512" href="<?php echo $urlPartner ?>assets/img/<?php echo $favicon; ?>?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/css/root.css?v=<?php echo time(); ?>">
-    <meta name="description" content="Rulta - WichyAlonzo">
-    <meta name="keywords" content="sorteos, concursos, obtener comentario de Instagram, comentario aleatorio Instagram, sorteo para Facebook, sorteos gratis, aplicación para sorteos en Instagram, sorteos en Instagram gratis, sorteo en facebook gratis, ganador al azar, sorteo al azar">
     <link rel="icon" href="app_ruleta/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="app_ruleta/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="app_ruleta/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="app_ruleta/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="app_ruleta/favicon-16x16.png">
-    <meta name="google-site-verification" content="anRG_D8WAq_EemBNsdLEx2FT-RSmW7IJUzOt8QNWYM4">
-    <meta name="msvalidate.01" content="D2347BCC2A4799B81EEDFC25EB9A2AE1">
     <link rel="stylesheet" href="app_ruleta/css/all.front.compiled.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="app_ruleta/css/wheel.css?v=<?php echo time(); ?>">
-    <script src="app_ruleta/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js?v=<?php echo time(); ?>" data-cf-settings="3eab436ace7728c68e812583-|49"></script>
     <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="app_ruleta/css-1?family=Inter:400,500,700,900&display=swap">
-    <script src="app_ruleta/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js?v=<?php echo time(); ?>" data-cf-settings="3eab436ace7728c68e812583-|49"></script>
     <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="app_ruleta/font/fa-pro-5/css/all.min.css?1629896048">
+    
+    <!-- Script -->
+    <script src="app_ruleta/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js?v=<?php echo time(); ?>" data-cf-settings="3eab436ace7728c68e812583-|49"></script>
+    <script src="app_ruleta/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js?v=<?php echo time(); ?>" data-cf-settings="3eab436ace7728c68e812583-|49"></script>
+    
 </head>
 
 <body>
@@ -525,9 +521,6 @@ if (isset($_SESSION['user'])) {
                                             <option value="90" :disabled="edit_entry_modal.max_chance_available < 90">90%</option>
                                             <option value="99" :disabled="edit_entry_modal.max_chance_available < 99">99%</option>
                                             <option value="100" :disabled="edit_entry_modal.max_chance_available < 100">100%</option>
-
-
-
                                         </select>
                                         <div class="text-danger small mt-2" v-if="parseInt(edit_entry_modal.chance) === 0">
                                             {{ $t('app_wheel.label_prize_0_chance') }}
@@ -548,12 +541,9 @@ if (isset($_SESSION['user'])) {
                     <div class="modal dash" tabindex="-1" role="dialog" id="LeadsWheelExplainModal">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-
-
                                 <button type="button" class="close close-fixed" data-dismiss="modal" aria-label="Close">
                                     <i class="fal fa-times"></i>
                                 </button>
-
                                 <div class="modal-body p-5">
                                     <div class="text-center">
                                         <div class="_df _aic _jcc">
@@ -601,9 +591,7 @@ if (isset($_SESSION['user'])) {
                             </div>
                         </div>
                     </div>
-
                     <app-signup ref="AuthModal" @signup="onUserSignup" @login="onUserLogin" source="wheel"></app-signup>
-
                     <div class="modal dash upgrade__modal" id="upgradeModal3" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document" :style="(upgrade_modal.upgrade_step !== 1 && upgrade_modal.app_type !== 'fortune-wheel') ? 'max-width: 550px;' : ''">
                             <div class="modal-content">

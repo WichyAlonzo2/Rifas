@@ -34,4 +34,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://cactuswings.wichyalonzo.com/
+Sitemap: https://localhost/

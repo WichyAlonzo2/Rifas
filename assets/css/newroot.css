@@ -1,0 +1,67 @@
+.iconListaBoletos {
+    font-weight: 600;
+    margin-top: -10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.carrucelDiv {
+    width: 80%;
+    margin: auto;
+}
+
+.btnMaquinita {
+    background: #000;
+    border-width: 0px;
+    padding: 0;
+}
+
+.btnDisponible {
+    border: 1px solid var(--comprar-boletos) !important;
+    color: var(--color-text-comprar) !important;
+    font-weight: 700;
+    margin: 1px;
+    width: 46px;
+    height: 24px;
+    border-radius: 8%;
+    font-size: 13px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnApartado {
+    width: 46px !important;
+    height: 24px !important;
+    background: var(--comprar-boletos) !important;
+    color: var(--comprar-boletos) !important;
+    border: 1px solid transparent !important;
+    color: #000;
+    padding: 1px;
+    font-weight: 700;
+    margin: 1px;
+    width: 55px;
+    height: 30px;
+    border-radius: 8%;
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    font-size: 14px;
+}
+
+.switchBoletos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center
+}
+
+
+.w-18-h-10 {
+    width: 18px!important;
+    height: 10px!important;
+}
